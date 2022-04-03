@@ -1,0 +1,23 @@
+.review-box{
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ededed;
+    text-align: center;
+}
+.review-box .thumb{
+    width: 60px;
+    width: 60px;
+    margin: 0 auto 20px;
+    border-radius: 50% 50% 50% 50%/35% 35% 65% 65%;
+    -webkit-box-shadow: -1px 1px 20px rgb(0 0 0 / 10%);
+    box-shadow: -1px 1px 20px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    background-color: #c8c8c8;
+}
+.review-box .thumb img{
+    width: 60px;
+    width: 60px; 
+}
+.review-box svg{
+    color: #d3d3d3;
+}
