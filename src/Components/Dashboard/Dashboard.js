@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import {
   Area,
@@ -9,22 +8,16 @@ import {
   Legend,
   Line,
   LineChart,
-  ResponsiveContainer,
   XAxis,
   YAxis,
   Tooltip,
   PieChart,
   Pie,
 } from "recharts";
+import useDashData from "../hooks/useDashData";
 
 const Dashboard = () => {
-  const [dashboardData, setdashboardData] = useState([]);
-  useEffect(() => {
-    fetch("./dashboard-data.json")
-      .then((res) => res.json())
-      .then((data) => setdashboardData(data));
-  }, []);
-  console.log(dashboardData);
+  const [dashboardData, setdashboardData] = useDashData();
   return (
     <Container className="py-5">
       <Row>
@@ -51,8 +44,7 @@ const Dashboard = () => {
         </Col>
         <Col>
           <BarChart width={400} height={300} data={dashboardData}>
-            <Bar dataKey="investment" fill="#82ca9d" />
-            {/* <Bar dataKey="sell" fill="#82ca9d" /> */}
+            <Bar dataKey="investment" fill="#82ca9d" /> 
             <Bar dataKey="revenue" fill="#8884d8" />
             <XAxis dataKey="month" />
             <YAxis />
@@ -105,7 +97,7 @@ const Dashboard = () => {
           <Pie data={dashboardData} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
           <Pie data={dashboardData} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
           <Tooltip />
-          {/* <Legend /> */}
+        
         </PieChart>
         </Col>
       </Row>
