@@ -21,6 +21,7 @@ const Home = () => {
                 Bangladesh. Here you will find all of tourist place/spots of
                 Bangladesh with necessary information which you want.
               </p>
+              <a className="btn-live-demo" href="https://play.google.com/store/apps/details?id=com.tourtoday.bd" target="_blank">Intall Now</a>
             </Col>
             <Col>
               <img src={bannerPhoto} alt="" />

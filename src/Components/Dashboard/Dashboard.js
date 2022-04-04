@@ -52,7 +52,7 @@ const Dashboard = () => {
         <Col>
           <BarChart width={400} height={300} data={dashboardData}>
             <Bar dataKey="investment" fill="#82ca9d" />
-            <Bar dataKey="sell" fill="#03a9f4" />
+            {/* <Bar dataKey="sell" fill="#82ca9d" /> */}
             <Bar dataKey="revenue" fill="#8884d8" />
             <XAxis dataKey="month" />
             <YAxis />
@@ -105,6 +105,7 @@ const Dashboard = () => {
           <Pie data={dashboardData} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
           <Pie data={dashboardData} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
           <Tooltip />
+          {/* <Legend /> */}
         </PieChart>
         </Col>
       </Row>
