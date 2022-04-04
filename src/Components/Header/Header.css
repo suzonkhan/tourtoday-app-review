@@ -27,3 +27,14 @@ nav ul li a.current-menu{
 .logo{
     padding: 20px 0;
 }
+@media screen and (max-width: 767px) {
+    nav{
+        text-align: center;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav ul li a {
+        padding: 30px 10px;
+    }
+}

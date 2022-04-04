@@ -8,13 +8,12 @@ const Header = () => {
     <nav>
       <Container>
         <Row>
-          <Col>
+          <Col xs={12} md={3} lg={4}>
           <div className="logo">
           <img src={logo} alt="" />
-          </div>
-        
+          </div> 
           </Col>
-          <Col>
+          <Col xs={12} md={9} lg={8}>
             <ul>
               <CustomLink to="/"> Home</CustomLink>
               <CustomLink to="/about">About</CustomLink>

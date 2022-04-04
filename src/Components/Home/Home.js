@@ -13,8 +13,12 @@ const Home = () => {
     <div>
       <section className="py-5 main-banner">
         <Container>
-          <Row className="align-items-center">
-            <Col>
+          <Row className="align-items-center flex-sm-row-reverse">
+          <Col xs={12} md={6} lg={6} className="text-end">
+              <img src={bannerPhoto} alt="" />
+            </Col>
+            <Col xs={12} md={6} lg={6}>
+            <h4 className="text-branding">TourTodayBD</h4>
               <h2 className="h1 mb-4">Keep a tour guid in you pocket</h2>
               <p className="lead">
                 TourTodayBD is one of the largest tour and travel directory of
@@ -23,9 +27,7 @@ const Home = () => {
               </p>
               <a className="btn-live-demo" href="https://play.google.com/store/apps/details?id=com.tourtoday.bd" target="_blank">Intall Now</a>
             </Col>
-            <Col>
-              <img src={bannerPhoto} alt="" />
-            </Col>
+            
           </Row>
         </Container>
       </section>

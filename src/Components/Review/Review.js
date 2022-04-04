@@ -8,7 +8,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 const Review = ({ name, review, thumb, rating }) => {
 //   console.log(review.name);
   return (
-    <Col xs={12} md={2} lg={4} className="mb-4">
+    <Col xs={12} md={6} lg={4} className="mb-4">
       <div className="review-box">
          <div className="thumb"> <img src={review.thumb} alt="" /></div>
         <h4> {review.name} </h4>
