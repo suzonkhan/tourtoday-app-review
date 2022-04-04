@@ -1,4 +1,4 @@
-# Project Name:  [TourTodayBD App Review](https://play.google.com/store/apps/details?id=com.tourtoday.bd)
+# Project Name:  [TourTodayBD App Review](https://tourtodaybd-review.netlify.app/)
 
 ## [Live URL](https://tourtodaybd-review.netlify.app/)
 
