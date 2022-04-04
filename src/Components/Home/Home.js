@@ -31,9 +31,8 @@ const Home = () => {
       <section className="py-5">
         <Container>
           <Row>
-            <Col>
-              {" "}
-              <h2 className="block-title">Customer Review</h2>{" "}
+            <Col> 
+              <h2 className="block-title">Customer Review</h2> 
             </Col>
           </Row>
           <Row>
