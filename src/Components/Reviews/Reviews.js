@@ -12,7 +12,7 @@ const Reviews = () => {
                 <Col> <h2 className="block-title">Customer Review</h2>    </Col>
             </Row>
             <Row>
-                {reviews.map((review) => <Review key={review.id} review={review}></Review>)}
+                {reviews.map((singleReview) => <Review key={singleReview.id} reviewItem={singleReview}></Review>)}
             </Row>
         </Container>
       </section>

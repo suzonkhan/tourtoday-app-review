@@ -38,10 +38,8 @@ const Home = () => {
               <h2 className="block-title">Customer Review</h2> 
             </Col>
           </Row>
-          <Row>
-            {reviews.slice(0, 3).map((review) => (
-              <Review key={review.id} review={review}></Review>
-            ))}
+          <Row> 
+            {reviews.slice(0, 3).map((singleReview) => <Review key={singleReview.id} reviewItem={singleReview}></Review>)}
           </Row>
           <Row>
             <Col className="text-center"> 
